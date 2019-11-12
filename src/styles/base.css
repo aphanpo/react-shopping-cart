@@ -1,0 +1,82 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit;}
+
+.container {
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.topPart {
+    display: flex;
+    align-items: center;
+    margin-right: 19px;
+    justify-content: space-between;
+}
+
+.aside{
+    display: flex;
+}
+
+.size {
+    justify-content: flex-start;
+    border-radius: 100%;
+    width: 40px;
+    padding: 5px 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgb(236, 236, 236);
+    border: transparent;
+    outline: none;
+}
+
+.size:hover, select:hover {
+    border: 1px solid black;
+}
+
+
+#filter {
+    display: flex;
+}
+
+select {
+    height: 30px;
+    margin: 10px;
+    border: #CCC;
+    outline: none;
+}
+
+#picName {
+    border-bottom: rgb(228, 191, 64);
+}
+
+#picPrice {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#buy {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.mainSection:hover {
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+
+#buy:hover {
+    background-color: rgb(228, 191, 64);
+    cursor: pointer;
+}
+
+#installments {
+    color: rgb(155, 155, 155);
+}
